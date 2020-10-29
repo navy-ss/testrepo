@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
+
+		<style>
+
+			/* Basic CSS comment */
+			body {
+				background: grey;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+				font-size: 30px;
+				color: black;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 80px;
+				color: #333	;
+			}
+			h2 {
+				font-size: 60px;
+				color: #333	;
+			}
+			
+
+
+		</style>
+
+		<script>
+			/* this is an event */
+			/* alert("I'm annoying"); */
+			//Alert comes out
+			var username = prompt("Hello, who are you?");
+			//list of cars
+			var car = new Array("BMW", "Saab", "Maserati");
+			//pictures of cars
+			var carPictures = new Array("img/BMW.jpg", "img/Saab.jpg", "img/Maserati.jpg");
+			//Randamize cars
+			var randomCar = Math.floor(Math.random()*car.length);
+			if(username==="Chris"|| username==='Anirban') {
+				document.write("<h1><strong>Hello " + username + " you won a " + car[randomCar] + "!</strong></h1>");
+				document.write("<img src=\"" + carPictures[randomCar] +"\"height=500px width=800px>");
+			}
+			else {
+				document.write("<h1>Hello " + username + "!");
+			}
+		</script>
+
+	</head>
+
+	<body> <br>
+		<h2><strong>Oprah Is Happy For You</strong></h2>
+		<img src="https://assets.vogue.com/photos/58774677db0d9b0b17421612/master/w_1600%2Cc_limit/oprah-1998-4_173133844909.jpg" alt="Oprah" width="500" height="700">
+	</body>
+
+</html>
